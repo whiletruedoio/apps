@@ -1,0 +1,17 @@
+# Using the homer dashboard as base
+FROM docker.io/b4bz/homer:v22.06.1
+
+# Avoid writing default assets
+ENV INIT_ASSETS=0
+
+# Adding some while-true-do.io information
+LABEL io.while-true-do.site="https://while-true-do.io"
+LABEL io.while-true-do.blog="https://blog.while-true-do.io"
+LABEL io.while-true-do.code="https://github.com/whiletruedoio"
+LABEL io.while-true-do.mail="hello@while-true-do.io"
+
+# Adding authors is recommended
+LABEL io.while-true-do.image.authors="dschier@while-true-do.io"
+
+# Copy the configuration and assets
+COPY assets/ /www/assets/

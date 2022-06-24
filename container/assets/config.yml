@@ -1,0 +1,207 @@
+---
+# reference: https://github.com/bastienwirtz/homer/
+
+# Globals
+
+title: "apps.while-true-do.io"
+subtitle: "Application Dashboard"
+logo: "assets/logos/whiletruedoio_logo_trans.png"
+
+header: true
+footer: "Open Source - Development, Infrastructure, Community"
+
+columns: "3"
+connectivityCheck: true
+
+proxy:
+  useCredentials: false
+
+# Theming
+
+defaults:
+  layout: "list"
+  colorTheme: "auto"
+
+theme: "default"
+
+# stylesheet:
+#   - "assets/custom.css"
+
+colors:
+  light:
+    highlight-primary: "#0a9c9c"
+    highlight-secondary: "#1abcac"
+    highlight-hover: "#0a9c9c"
+    background: "#e3e0e0"
+    card-background: "#eef0f0"
+    text: "#090509"
+    text-header: "#090509"
+    text-title: "#090509"
+    text-subtitle: "#090509"
+    card-shadow: "rgba(0, 0, 0, 0.2)"
+    link: "#090509"
+    link-hover: "#090509"
+  dark:
+    highlight-primary: "#0a9c9c"
+    highlight-secondary: "#1abcac"
+    highlight-hover: "#0a9c9c"
+    background: "#292529"
+    card-background: "#393539"
+    text: "#eef0f0"
+    text-header: "#090509"
+    text-title: "#eef0f0"
+    text-subtitle: "#eef0f0"
+    card-shadow: "rgba(0, 0, 0, 0.4)"
+    link: "#eef0f0"
+    link-hover: "#eef0f0"
+
+# Content
+
+links:
+
+  - name: "Contribute"
+    icon: "fas fa-code-branch"
+    url: "https://github.com/whiletruedoio/apps.while-true-do.io/"
+    target: "_blank"
+  - name: "Report an issue"
+    icon: "fas fa-bug"
+    url: "https://github.com/whiletruedoio/apps.while-true-do.io/issues"
+    target: "_blank"
+
+services:
+
+  - name: "Services"
+    icon: "fas fa-user-cog"
+    items:
+
+      - name: "Apps"
+        subtitle: "Application Dashboard"
+        icon: "fas fa-columns"
+        url: "https://apps.while-true-do.io"
+        keywords: "apps overview dashboard services"
+        tag: "service"
+        tagstyle: "is-info"
+        target: "_blank"
+      - name: "Blog"
+        subtitle: "News and Articles"
+        icon: "fas fa-feather"
+        url: "https://blog.while-true-do.io"
+        keywords: "blog news articles updates guides community"
+        tag: "service"
+        tagstyle: "is-info"
+        target: "_blank"
+      - name: "Code"
+        subtitle: "Our Development Work"
+        icon: "fas fa-code-branch"
+        url: "https://github.com/whiletruedoio"
+        keywords: "code programming source github git repository development"
+        tag: "service"
+        tagstyle: "is-info"
+        target: "_blank"
+      - name: "Docs"
+        subtitle: "Documentation"
+        icon: "fas fa-book"
+        url: "https://docs.while-true-do.io"
+        keywords: "documentation docs help support guides tutorials community"
+        tag: "service"
+        tagstyle: "is-info"
+        target: "_blank"
+      - name: "Mail"
+        subtitle: "Send and Receive Mails"
+        icon: "fas fa-envelope"
+        url: "https://mail.while-true-do.io"
+        keywords: "mail email contact"
+        tag: "service"
+        tagstyle: "is-info"
+        target: "_blank"
+      - name: "Meet"
+        subtitle: "Jitsi Meet"
+        icon: "fas fa-video"
+        url: "https://meet.while-true-do.io"
+        keywords: "meet jitsi conference video meeting community"
+        tag: "service"
+        tagstyle: "is-info"
+        target: "_blank"
+      - name: "Page"
+        subtitle: "Our Website"
+        icon: "fas fa-globe"
+        url: "https://www.while-true-do.io"
+        keywords: "web homepage website"
+        tag: "service"
+        tagstyle: "is-info"
+        target: "_blank"
+
+  - name: "Contact"
+    icon: "fas fa-user-plus"
+    items:
+
+      - name: "E-Mail"
+        subtitle: "Send us an Email"
+        icon: "fas fa-envelope"
+        url: "mailto:hello@while-true-do.io"
+        keywords: "contact email mail question support help"
+        tag: "contact"
+        tagstyle: "is-success"
+        target: "_blank"
+      - name: "LinkedIn"
+        subtitle: "Connect with us on LinkedIn"
+        icon: "fab fa-linkedin"
+        url: "https://www.linkedin.com/company/whiletruedoio/"
+        keywords: "social linkedin"
+        tag: "contact"
+        tagstyle: "is-success"
+        target: "_blank"
+      - name: "Matrix"
+        subtitle: "Join our Matrix Chat"
+        icon: "fas fa-users"
+        url: "https://matrix.to/#/@whiletruedoio-community:matrix.org"
+        keywords: "social matrix chat community news"
+        tag: "contact"
+        tagstyle: "is-success"
+        target: "_blank"
+      - name: "Telegram"
+        subtitle: "News Channel"
+        icon: "fab fa-telegram"
+        url: "https://t.me/whiletruedoio"
+        keywords: "social telegram community news updates"
+        tag: "contact"
+        tagstyle: "is-success"
+        target: "_blank"
+      - name: "Twitter"
+        subtitle: "News, Feedback and Tweets"
+        icon: "fab fa-twitter"
+        url: "https://twitter.com/whiletruedoio/"
+        keywords: "social twitter tweet news updates"
+        tag: "contact"
+        tagstyle: "is-success"
+        target: "_blank"
+
+  - name: "Admin"
+    icon: "fas fa-user-shield"
+    items:
+
+      - name: "Admin"
+        subtitle: "Admin Panel"
+        icon: "fas fa-cogs"
+        url: "https://admin.while-true-do.io"
+        keywords: "admin settings control configure"
+        tag: "admin"
+        tagstyle: "is-danger"
+        target: "_blank"
+      - name: "Ping"
+        subtitle: "Status of our services at a glance"
+        icon: "fas fa-tachometer"
+        url: "https://ping.while-true-do.io"
+        keywords: "status ping monitor alert analytics"
+        tag: "admin"
+        tagstyle: "is-danger"
+        target: "_blank"
+      - name: "Gate"
+        subtitle: "The central gateway to our web services"
+        icon: "fas fa-shield-alt"
+        url: "https://gate.while-true-do.io"
+        keywords: "load-balancer proxy gateway traffic"
+        tag: "admin"
+        tagstyle: "is-danger"
+        target: "_blank"
+...

@@ -1,0 +1,33 @@
+#<--- 72 characters --------------------------------------------------->
+#
+# Thank you so much for your contribution! Below you can find the
+# pattern, some explanation and an example for a proper commit message.
+# Please also consider to update the CHANGELOG.md and to sign your
+# commit.
+#
+# reference: https://www.conventionalcommits.org/
+#
+#<--- pattern --------------------------------------------------------->
+#
+# feat|fix|refact|docs[(scope)]: <SUBJECT>
+#
+# The body, explains the change a little bit more. You can:
+#
+# - use
+# - bullet
+# - points
+#
+# Adding a footer to address the issue is recommended.
+#
+# - resolves: #0815
+# - addresses: #4711
+#
+# BREAKING CHANGE: <SOME DESCRIPTION>
+#
+#<--- usage ----------------------------------------------------------->
+#
+# To apply this kind of template, you can configure git.
+#
+# `git config commit.template .gitmessage`
+#
+#<--- 72 characters --------------------------------------------------->
