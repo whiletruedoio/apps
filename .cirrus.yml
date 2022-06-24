@@ -60,6 +60,7 @@ devel_docker_builder:
   build_script: "docker image build
                 --cache-from $DOCKER_HUB_IMAGE:latest
                 --tag $DOCKER_HUB_IMAGE:devel
+                --file container/Containerfile
                 container/"
   push_script: "docker image push
                 --all-tags
@@ -82,6 +83,7 @@ stable_docker_builder:
                 --cache-from $DOCKER_HUB_IMAGE:latest
                 --tag $DOCKER_HUB_IMAGE:latest
                 --tag $DOCKER_HUB_IMAGE:$CIRRUS_TAG
+                --file container/Containerfile
                 container/"
   push_script: "docker image push
                 --all-tags
