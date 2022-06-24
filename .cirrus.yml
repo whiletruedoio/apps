@@ -45,12 +45,11 @@ env:
 
 # Release
 devel_docker_builder:
-  name: "Deliver Devel Image"
+  name: "Build Devel Image"
   only_if: "$CIRRUS_BRANCH == $CIRRUS_DEFAULT_BRANCH &&
             $CIRRUS_TAG == '' &&
             $CIRRUS_ENVIRONMENT != 'CLI'"
   depends_on:
-    - "Lint Shell"
     - "Lint Containerfile"
     - "Scan Containerfile"
   info_script: "docker info"
@@ -67,12 +66,11 @@ devel_docker_builder:
                 $DOCKER_HUB_IMAGE"
 
 stable_docker_builder:
-  name: "Deliver Stable Image"
+  name: "Build Stable Image"
   only_if: "$CIRRUS_BRANCH == $CIRRUS_DEFAULT_BRANCH &&
             $CIRRUS_TAG != '' &&
             $CIRRUS_ENVIRONMENT != 'CLI'"
   depends_on:
-    - "Lint Shell"
     - "Lint Containerfile"
     - "Scan Containerfile"
   info_script: "docker info"
